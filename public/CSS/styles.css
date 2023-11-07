@@ -1,0 +1,440 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    background-color: #ebebeb;
+}
+
+/* Hearder */
+/* ------------------------------------------------------------------------------------------------- */
+.main-header {
+    width: 100%;
+    background-color: #eac926;
+  }
+  .main-header .content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .main-header .content .top-bar {
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  } 
+  .main-header .content .top-bar h2{
+    margin-top: 15px;
+    text-align: center;
+    color: #03264c;
+    font-size: calc(14px + 0.3vw);
+  }
+  .main-header .content .top-bar .top-up {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-header .content .top-bar .top-up a {
+    width: 35%;
+  }
+  .main-header .content .top-bar .top-up .search {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  } 
+  .main-header .content .top-bar .top-up .search .search-bar {
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    height: 24px;
+  }
+  .main-header .content .top-bar .top-up .search button{
+    width: 15%;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    color: #666;
+  }
+  .main-header .content .nav-bar {
+    display: none;
+  }
+  .main-header .content .nav-bar ul {
+    list-style: none;
+    padding: 0;
+  }
+  .main-header .content .burger-menu {
+    color: #ececec;
+    background-color: #03264c;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 10%;
+  }
+  .main-header .content .burger-menu:hover {
+    background-color: #0550ba;
+  }
+
+/*------------------------------------ Version Tablet ---------------------------------------- */
+
+@media (min-width: 485px){
+
+    .main-header .content .top-bar{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .main-header .content .top-bar .top-top-bar {
+        width: 61%;
+        display: flex;
+        align-items: center;
+    }
+    .main-header .content .top-bar .top-top-bar .search {
+        height: 18px;
+    }
+    .main-header .content .top-bar .buy-header {
+        width: 32%;
+        font-size: calc(8px + 0.6vw);
+    }
+    .main-header .content .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        font-size: 14px;
+    }
+    .main-header .content .nav-bar ul {
+        display: flex;
+    }
+    .main-header .content .nav-bar ul li {
+        padding: 4px calc(3px + 0.15vw) 4px calc(3px + 0.15vw);
+        color: #03264c;
+        transition: .4s ease all;
+    }
+    .main-header .content .nav-bar ul li:hover {
+        background-color: #ddbe24;
+    }
+    .main-header .content .nav-bar .left-nav-bar {
+        align-content: flex-start;
+        padding-left: 10px;
+    }
+    .main-header .content .nav-bar .right-nav-bar {
+        align-content: flex-end;
+        padding-right: 10px;
+    }
+    .main-header .content .nav-bar ul li a {
+        text-decoration: none;
+        color: #03264c;
+        font-size: calc(9px + 0.3vw);
+    }
+    .main-header .content .burger-menu {
+        display: none;
+    }
+}
+
+/*------------------------------------ Version desktop ---------------------------------------- */
+@media (min-width: 769px){
+
+    .main-header .content .top-bar h2{
+        font-size: 24px;
+    }
+    .main-header .content .nav-bar ul li{
+      font-size: 24px;
+    }
+    .main-header .content .nav-bar ul li a{
+        font-size: 14px;
+    }
+    .main-header .content .nav-bar ul li i{
+        font-size: 14px;
+    }
+}
+
+/* Main */
+/* ------------------------------------------------------------------------------------------------- */
+  .banner{
+    width: 100%;
+  }
+  .banner img{
+    width: 100%;
+  }
+  .main-main{
+    background-color: #ebebeb;
+  }
+  .main-main .main-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  .main-main .main-body .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; 
+  }
+  .main-main .main-body .main-article .title-section {
+    color: #666;
+    font-size: calc(16px + 0.5vw);
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .main-main .main-body .main-article .article-cards {
+    background-color: white;
+    width: 88%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 15px;
+    transition: .15s ease all;
+   }
+  .main-main .main-body .main-article .article-cards:hover {
+    width: 98%;
+  }
+  .main-main .main-body .main-article .article-cards img{
+    width: 80%;
+  }
+  .main-main .main-body .main-article .article-cards .caracteristics-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+  }
+  .main-main .main-body .main-article .article-cards .caracteristics-article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: .5s ease all;
+  }
+  .main-main .main-body .main-article .article-cards .caracteristics-article i:hover{
+    transform: rotate(-90deg);
+  }
+  .main-main .main-body .main-article .article-cards .caracteristics-article .for-pay {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .main-main .main-body .main-article .article-cards .caracteristics-article .for-pay .precios {
+    width: 40%;
+  } 
+  .main-main .main-body .main-article .article-cards .caracteristics-article .for-pay .off {
+    color: #39b54a;
+    width: 60%;
+  }
+  .main-main article .descripcion {
+    font-size: 16px;
+    color: #666;
+    display:block;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 300ms;
+  }
+  .main-main article:hover .descripcion{
+    opacity: 1;
+  }
+/*------------------------------------ Version Tablet ---------------------------------------- */
+
+@media (min-width: 485px){
+
+    .main-main .main-body .main-article {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-wrap: wrap;
+      }
+      .main-main .main-body .main-article .title-section {
+        width: 100%;
+        text-align: left;
+      }
+      .main-main .main-body .main-article .article-cards {
+        box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
+        width: 47%;
+        transition: .15s ease all;
+      } 
+      .main-main .main-body .main-article .article-cards:hover {
+        width: 48%;
+        box-shadow: 0px 0px 12px rgb(70, 70, 70);
+      }  
+      .main-main .main-body .main-article .article-cards .caracteristics-article .descripcion {
+        display: block;
+        color: #666;
+        margin-top: 15px;
+      }
+}
+
+/*------------------------------------ Version desktop ---------------------------------------- */
+@media (min-width: 769px){
+
+    .main-main .main-body .main-article .article-cards {
+        box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
+        min-width: 18%;
+        width: 23%;
+      }
+      .main-main .main-body .main-article .article-cards:hover {
+        width: 24%;
+      }
+    .main-main .main-body .main-article .article-cards img{
+        margin-bottom: 15px;
+    }  
+    .main-main .main-body .main-article .article-cards .caracteristics-article .for-pay .precios {
+        font-size: 12px;
+    } 
+    .main-main .main-body .main-article .article-cards .caracteristics-article .for-pay .off {
+        font-size: 12px;
+        padding-left: 8px;
+    }
+    .main-main .main-body .main-article .article-cards .caracteristics-article{
+        margin-top: 10px;
+    }
+}
+/* --------------------------------------- Formularios ---------------------------------------------------------- */
+.form-section {
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .form-container,
+  .login-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container label,
+  .form-container p,
+  .login-container label {
+    margin: 8px 0;
+  }
+  
+  .form-container p {
+    font-weight: bold;
+  }
+  
+  .form-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .radio-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .checkbox-inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .form-btn {
+    margin: 8px;
+    margin-top: 15px;
+    padding: 5px;
+    border: 1px solid #1259c3;
+    color: #fff;
+    background: #1259c3;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-btn:hover {
+    color: white;
+    background: #0022AA;
+  }
+  
+  .login-section {
+    width: 80%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .login-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+/* Footer */
+/* ------------------------------------------------------------------------------------------------- */
+footer{
+    padding-top: 20px;
+    text-align: center;
+    background-color: white;
+}
+footer .target{
+    margin-bottom: 15px;
+}
+footer .target i{
+    font-size: 2em;
+    color: #1259C3;
+}
+footer .target h3{
+    color: #666;
+}
+footer .target p{
+    display: inline-block;
+    width: 70vw;
+    color: gray;
+    font-size: 12px;
+}
+/*------------------------------------ Version desktop ---------------------------------------- */
+@media (min-width: 769px){
+
+    footer .tarjetas{
+        display: flex;
+    }
+    footer .tarjetas section{
+        width: 33%;
+    }
+    footer .target p{
+        width: 75%;
+        color: gray;
+        font-size: 10px;
+    }
+    footer .target i:hover{
+        color: #eac926;
+    }
+
+}
+
+
+
+
+/*------------------------------------ Version desktop ---------------------------------------- */
+
+@media (min-width: 1280px){
+
+    .main-main .lastVisit .products article{
+        width: 23%;
+    }
+}
